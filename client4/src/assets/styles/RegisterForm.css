@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+/* Styles de base pour le formulaire */
+.error-text{
+  font-size: 12px;
+  color:red;
+}
+.form-container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 2rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  color: var(--text-dark);
+}
+
+.register-form .form-group {
+  margin-bottom: 1.5rem;
+}
+
+.register-form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: var(--text-dark);
+  font-weight: 500;
+}
+
+.register-form input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.register-form input:focus {
+  outline: none;
+  border-color: var(--primary-color);
+}
+
+.register-form button {
+  width: 100%;
+  padding: 1rem;
+  background-color: var(--primary-color);
+  color: var(--white);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.register-form button:hover {
+  background-color: var(--primary-color-dark);
+}
+
+/* Style pour rendre le formulaire plus réactif */
+@media (max-width: 768px) {
+  .form-container {
+    padding: 1rem;
+  }
+
+  .register-form input {
+    font-size: 0.9rem;
+  }
+
+  .register-form button {
+    font-size: 0.9rem;
+    padding: 0.75rem;
+  }
+}
